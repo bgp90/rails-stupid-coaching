@@ -4,10 +4,21 @@
   </head>
 
   <body>
-    <h1>Questions#answer</h1>
-    <%= @question %>
-    <p>Find me in app/views/questions/answer.html.erb</p>
 
-    <%= link_to "Ask another question", ask_path %>
+  <h1>Questions#answer</h1>
+
+  <blockquote>
+    <p><%= @question %></p>
+    <cite>You</cite>
+  </blockquote>
+  <br>
+  <blockquote>
+    <p><%= @answer %></p>
+    <cite>Your coach</cite>
+  </blockquote>
+  <br>
+  <p>Find me in app/views/questions/answer.html.erb</p>
+  <br>
+  <%= link_to "Ask another question", ask_path %>
   </body>
 </html>
